@@ -1,98 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online-Store</title>
-    <style>
-      * {
-        margin: 0px;
-      }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+</head>
+<body>
+    <header>
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">☕️Brew Haven</h2>
+            </a>
+            <ul class="nav-menu">
+                <li>
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li>
+                    <a href="#menu" class="nav-link">Menu</a>
+                </li>
+                <li>
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-      .container {
-        background-color: white;
-      }
-      .header {
-        display: flex;
-        justify-content: space-between;
-        background-color: orange;
-      }
-      .row {
-        display: flex;
-        justify-content: center;
-        background-color: silver;
-      }
-      .box {
-        background-color: white;
-        margin: 20px;
-        width: 300px;
+    <main>
+        <section class="hero-section" >
+            <div class="section-content">
+               <div class="hero-details">
+                <h2 class="title">Best Coffee</h2>
+                <h3 class="subtitle">☕ Welcome to Brew Haven – Where Every Sip Tells a Story!</h3>
+                <p class="description">
 
-      }
-      li {
-        display:inline-block;
-        padding: 10px;
-        font-size: larger;
-      }
-      a{
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-img {
-  width: 300px;
-}
-.row .box .product {
-  padding:10px
-}
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <div><h1>Online Store</h1></div>
-        <div>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <!-- <li><a href="https://forms.gle/p7zabRFzgHHMccnY8">GitHub A</a></li>
-            <li><a href="https://forms.gle/o9D6EFkbVHzdVKL18">GitHub B</a></li>
-   -->
+                   <br> 🌿 Indulge in the finest coffee, brewed with love and passion.
+                    
+                   <br> 🍪 Pair your favorite cup with our handcrafted treats for pure delight.
+                    
+                   <br> 💬 Relax, recharge, and create memories in our cozy ambiance.
+                    
+                   <br> ✨ Your perfect coffee experience starts here – Let’s brew some happiness!</p>
+                <div class="buttons"></div>
+               <a href="#" class="button order-now">Order Now</a>
+               <a href="#contact" class="button contact-us">Contact Us</a>
+               </div>
+            
+            <div class="hero-image-wrapper">
+                <img src="images/coffee-hero-section.png" alt="coee-img" class="hero-image">
+            </div>
+        </div>
+        </section>
+        <section class="about-section" id="about">
+            <div class="section-content">
+                <div class="about-image-wrapper">
+                    <img src="images/about-image.jpg" alt="About" class="about-image">
+                </div>
+                <div class="about-details">
+                    <h2 class="section-title">About Us</h2>
+                    <p class="text">At <b><i>Brew Haven,</i></b>we believe coffee is more than just a drink – it’s an experience! Founded with a passion for crafting the perfect brew, we bring you rich flavors, hand-selected beans, and a cozy space to relax and unwind. Whether you’re here for a morning boost, an afternoon chill, or deep conversations over a warm cup, we are dedicated to making every sip special.
 
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="box">
-          <img src="assets/1.png" />
-          <div class="product">
-          <h2>Product 1</h2>
-          <p>This is the description of the product.</p>
-          <h3>Rs 230</h3>
-          <button>Add to Cart</button>
-        </div>
-        </div>
-        <div class="box">
-          <img src="assets/2.png" />
-          <div class="product">
-          <h2>Product 2</h2>
-          <p>This is the description of the product.</p>
-          <h3>Rs 200</h3>
-          <button>Add to Cart</button>
-          </div>
-        </div>
-        <div class="box">
-          <img src="assets/3.png" />
-          <div class="product">
-          <h2>Product 3</h2>
-          <p>This is the description of the product.</p>
-          <h3>Rs 375</h3>
-          <button>Add to Cart</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+                        From bold espressos to creamy lattes and handcrafted pastries, our menu is designed to delight every coffee lover. We source our beans responsibly, ensuring quality, sustainability, and freshness in every cup.
+                        
+                        Come, be a part of our coffee-loving community. Let’s brew memories together! ☕✨
+                    </p>
+                    <div class="social-link-list">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu-section" id="menu">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="section-content">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="images/hot-beverages.png" alt="hot bevearge" class="menu-image">
+                        <h3>Hot Bevearges</h3>
+                        <p class="text">Indulge in our carefully crafted hot beverages, made from the finest ingredients to bring you comfort and joy with every sip. Whether you’re a fan of bold flavors or smooth, creamy textures, we have something to satisfy your cravings.
+                        </p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/cold-beverages.png" alt="cold bevearge" class="menu-image">
+                        <h3>Cold Bevearges</h3>
+                        <p class="text">Beat the heat with our refreshing cold beverages, crafted to keep you energized and satisfied. Whether you love coffee on ice or fruity, creamy delights, we have the perfect drink for you!
+                        </p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/refreshment.png" alt="refreshments" class="menu-image">
+                        <h3>Refreshments</h3>
+                        <p class="text">Quench your thirst with our delightful range of refreshing beverages, crafted to keep you cool and energized. Whether you’re looking for a light, fruity treat or a fizzy pick-me-up, we have the perfect drink for you!
+                        </p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/special-combo.png" alt="special-combp" class="menu-image">
+                        <h3>special-combo</h3>
+                        <p class="text">Indulge in our carefully curated special combos, designed to bring you the perfect blend of flavors. Whether you’re in the mood for a hearty breakfast, a quick snack, or a sweet treat with your coffee, we have something special just for you!
+                        </p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/desserts.png" alt="desserts" class="menu-image">
+                        <h3>Desserts</h3>
+                        <p class="text">No coffee experience is complete without a delicious dessert to satisfy your sweet tooth! Our handcrafted desserts are made with the finest ingredients to bring you the perfect balance of flavor and indulgence.
+                        </p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/burger-frenchfries.png" alt="burgers" class="menu-image">
+                        <h3>Burgers and French-fries</h3>
+                        <p class="text">Craving something savory and delicious? Our juicy burgers and crispy fries are made fresh to satisfy your hunger with every bite. Whether you love classic flavors or gourmet twists, we have something just for you!
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="gallery-section" id="gallery">
+            <h2 class="section-title">Gallery</h2>
+            <div class="section content">
+                <ul class="gallery-list">
+                    <li class="gallery-item">
+                        <img src="images/gallery-1.jpg" alt="image" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="images/gallery-2.jpg" alt="image" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="images/gallery-3.jpg" alt="imag1" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="images/gallery-4.jpg" alt="imag1" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="images/gallery-5.jpg" alt="imag1" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="images/gallery-6.jpg" alt="imag1" class="gallery-image">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="contact-section" id="contact">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="section-content">
+                <ul class="contact-info-list">
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>789 parklaze,5th avenue,kokapet,Hyderabad</p>
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>info@Brewhavenwebsite.com</p>
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(+91)9567345231</p>
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Monday-saturday:9:00AM to 5:00PM</p>
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Sunday:Closed</p>
+                        <i class="fa-solid fa-globe"></i>
+                        <p>www.BrewHaven.com</p>
+                    </li>
+                </ul>
+                <form action="#" class="contact-form">
+                    <input type="text" placeholder="Your name" class="form-input" 
+                    required>
+                    <input type="email"  placeholder="Your email" class="form-input"
+                     required>
+                     <textarea  placeholder="Your messege" class="form-input" 
+                     required></textarea>
+                     <button class="button-submit">
+                      Submit
+                     </button>
+                </form>
+            </div>
+        </section>
+        <footer class="footer-section">
+            <div class="section-content">
+                <p class="copyright-text">@ 2025 Coffee Shop</p>
+
+                <div class="social-link-list">
+                    <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <p class="policy-text">
+                    <a href="#" class="policy-link">Privacy Policy</a>
+                    <span class="seperator">.</span>
+                    <a href="" class="policy-link">Refund-policy</a>
+                </p>
+            </div>
+        </footer>
+    </main>
+</body>
 </html>
